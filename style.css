@@ -213,6 +213,31 @@ nav a{
 
                                     /* SECTION GALERIE */
 
+.galerie {
+    display: inline-flex;
+}
+
+.galerie img{ 
+    max-width: 100%;
+    height: auto;
+}
+
+.link1-4{
+    overflow:hidden;
+}
+
+.img1-4{
+    transition: 0.5s ease;
+    mix-blend-mode:color;
+}
+
+.img1-4:hover{
+    transform: scale(1.2);
+    background-color: var(--beige);
+    opacity: 0.4;
+}
+
+
                             /* SECTION MAP */
 .map {
     filter: grayscale(1) invert();
