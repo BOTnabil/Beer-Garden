@@ -307,11 +307,13 @@ nav a{
     margin-bottom: 7%;
     margin-left: 5%;
     margin-right: 5%;
+    /* background-color: var(--beige); */
 }
 
 .services img{
     width: 30%;
     margin-left: 35%;
+    /* mix-blend-mode: darken; */
 }
 
 .services h2{
@@ -328,6 +330,10 @@ nav a{
     font-weight: 300;
     text-align: center;
     line-height: 45px;
+}
+
+.box1:hover .imgBox1{
+    background-color: var(--beige);
 }
 
                             /* SECTION MAP */
