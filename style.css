@@ -2,6 +2,7 @@
 :root {
     --beige : #c59d5f;
     --font : "Oswald", sans-serif;
+    --gris : #a3a3a3;
     
 }
                                 /* GENERAL */
@@ -124,7 +125,7 @@ nav a{
 .boxLeftTop p{
     margin-top: 4%;
     font-weight: 300;
-    color: #a3a3a3;
+    color: var(--gris);
     font-family: var(--font);
     font-size: 1.6vw;
 }
@@ -181,7 +182,7 @@ nav a{
 
 .boxRightBot p{
     margin-top: 4%;
-    color: #a3a3a3;
+    color: var(--gris);
     font-family: var(--font);
     font-size: 1.6vw;
     font-weight: 300;
@@ -214,8 +215,71 @@ nav a{
                                     /* SECTION GALERIE */
 
 .galerie {
+    position: relative;
     display: inline-flex;
     background-color: var(--beige);
+}
+
+.link1-4{
+    overflow:hidden;
+}
+
+.plus1 {
+    position: absolute;
+    width: 6vw;
+    filter: invert();
+    left: 9.6vw;
+    top: 37%;
+    transition: 0.5s ease;
+    opacity: 0;
+}
+
+.plus2 {
+    position: absolute;
+    width: 6vw;
+    filter: invert();
+    left: 33.5vw;
+    top: 37%;
+    transition: 0.5s ease;
+    opacity: 0;
+}
+
+.plus3 {
+    position: absolute;
+    width: 6vw;
+    filter: invert();
+    left: 58.5vw;
+    top: 37%;
+    transition: 0.5s ease;
+    opacity: 0;
+}
+
+.plus4 {
+    position: absolute;
+    width: 6vw;
+    filter: invert();
+    left: 83vw;
+    top: 37%;
+    transition: 0.5s ease;
+    opacity: 0;
+}
+
+.link1-4:hover .plus1{
+    opacity: 1;
+    transform: rotate(90deg);
+}
+
+.link1-4:hover .plus2{
+    opacity: 1;
+    transform: rotate(90deg);
+}
+.link1-4:hover .plus3{
+    opacity: 1;
+    transform: rotate(90deg);
+}
+.link1-4:hover .plus4{
+    opacity: 1;
+    transform: rotate(90deg);
 }
 
 .galerie img{ 
@@ -223,19 +287,48 @@ nav a{
     height: auto;
 }
 
-.link1-4{
-    overflow:hidden;
-}
-
 .img1-4{
     transition: 0.5s ease;
 }
 
 .img1-4:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     opacity: 0.3;
+    filter: grayscale(1);
 }
 
+                                /* SECTION SERVICES */
+
+.services {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.services img{
+    width: 30%;
+    margin-left: 35%;
+}
+
+.services h2{
+    font-family: var(--font);
+    font-size: 1.5vw;
+    text-align: center;
+    margin-top: 7%;
+}
+
+.services p {
+    color: var(--gris);
+    font-family: var(--font);
+    font-size: 1.4vw;
+    font-weight: 300;
+    text-align: center;
+    line-height: 45px;
+}
 
                             /* SECTION MAP */
 .map {
