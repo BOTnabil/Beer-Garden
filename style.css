@@ -215,6 +215,7 @@ nav a{
 
 .galerie {
     display: inline-flex;
+    background-color: var(--beige);
 }
 
 .galerie img{ 
@@ -228,13 +229,11 @@ nav a{
 
 .img1-4{
     transition: 0.5s ease;
-    mix-blend-mode:color;
 }
 
 .img1-4:hover{
     transform: scale(1.2);
-    background-color: var(--beige);
-    opacity: 0.4;
+    opacity: 0.3;
 }
 
 
