@@ -441,9 +441,9 @@ nav a{
 
 .map{
     overflow:hidden;
-    padding-bottom:56.25%;
     position:relative;
-    height:0;
+    height: 50vw;
+    background-color: #0e0e0e;
 }
 
 .sectionMap img{
@@ -458,7 +458,7 @@ nav a{
     margin-left: auto; 
     margin-right: auto; 
     left: 49%;
-    top: 30%;
+    top: 45%;
 }
 
 .map iframe{
@@ -466,7 +466,24 @@ nav a{
     pointer-events: none;
     left:0;
     top:0;
-    height:80%;
+    height:100%;
     width:100%;
     position:absolute;
+    mask: linear-gradient(transparent, black, transparent);
+}
+
+                            /* SECTION FOOTER */
+
+footer{
+    background-color: #0e0e0e;  
+}
+
+footer img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+    height: auto;
+    padding-top: 4%;
+    padding-bottom: 5%;
 }
