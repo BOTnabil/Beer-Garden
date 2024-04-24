@@ -18,7 +18,7 @@ a{  color: white;
 }
                                 /* HEADER */
 header {
-    z-index: 1;
+    z-index: 2;
     display: flex;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
@@ -311,9 +311,13 @@ nav a{
 
 .services img{
     mix-blend-mode: darken;
+    max-width: 100%;
+    height: auto;
+    
 }
 
 .services h2{
+    transition: .3s;
     font-family: var(--font);
     font-size: 1.3vw;
     text-align: center;
@@ -330,7 +334,8 @@ nav a{
 }
 
 .imgBox1{
-    margin-left: 35%;
+    margin-left: 8.6vw;
+    margin-right: 8vw;
     display: inline-block;
     mask:url(img/h5-icon-1.png) center/contain no-repeat;
     background: url(img/h5-icon-1.png) center/contain no-repeat;
@@ -338,7 +343,8 @@ nav a{
 }
 
 .imgBox2{
-    margin-left: 35%;
+    margin-left: 8.6vw;
+    margin-right: 8vw;
     display: inline-block;
     mask:url(img/h5-icon-2.png) center/contain no-repeat;
     background: url(img/h5-icon-2.png) center/contain no-repeat;
@@ -346,7 +352,8 @@ nav a{
 }
 
 .imgBox3{
-    margin-left: 35%;
+    margin-left: 8.6vw;
+    margin-right: 8vw;
     display: inline-block;
     mask:url(img/h5-icon-3.png) center/contain no-repeat;
     background: url(img/h5-icon-3.png) center/contain no-repeat;
@@ -354,25 +361,112 @@ nav a{
 }
 
 .imgBox4{
-    margin-left: 35%;
+    margin-left: 8.6vw;
+    margin-right: 8vw;
     display: inline-block;
     mask:url(img/h5-icon-4.png) center/contain no-repeat;
     background: url(img/h5-icon-4.png) center/contain no-repeat;
+    background-position: center;
     background-blend-mode: darken;
 }
 
 .box1:hover .imgBox1{ 
-    z-index: 0;
-    border-radius: 50%;
-    background-color: ;
+    background: linear-gradient(180deg, white, #dda95a)
+}
+
+.box2:hover .imgBox2{ 
+    background: linear-gradient(180deg, white, #dda95a)
+}
+
+.box3:hover .imgBox3{ 
+    background: linear-gradient(180deg, white, #dda95a)
+}
+
+.box4:hover .imgBox4{ 
+    background: linear-gradient(180deg, white, #dda95a)
 }
 
 .box1:hover .h2_1{
     color: var(--beige);
 }
 
-                            /* SECTION MAP */
-.map {
-    filter: grayscale(1) invert();
+.box2:hover .h2_2{
+    color: var(--beige);
 }
 
+.box3:hover .h2_3{
+    color: var(--beige);
+}
+
+.box4:hover .h2_4{
+    color: var(--beige);
+}
+
+                                /* SECTION PARALLAXE */
+
+.parallaxe{
+    color:white;
+    background-image: url("img/h5-parallax-img-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+    padding-top: 6%;
+    padding-bottom: 7%;
+}
+
+.parallaxe p{
+    margin-top: 0.5%;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 1.5vw;
+    text-align: center;
+    
+}
+
+.parallaxe h2{
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 4vw;
+    text-align: center;
+}
+                                /* SECTION MAP */
+
+
+.sectionMap{
+    position: relative;
+}
+
+.map{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.sectionMap img{
+    height: auto;
+    max-width: 60px;
+}
+
+.sectionMap a{
+    z-index: 1;
+    display: inline-block;
+    position: absolute; 
+    margin-left: auto; 
+    margin-right: auto; 
+    left: 49%;
+    top: 30%;
+}
+
+.map iframe{
+    filter: grayscale(1) invert();
+    pointer-events: none;
+    left:0;
+    top:0;
+    height:80%;
+    width:100%;
+    position:absolute;
+}
