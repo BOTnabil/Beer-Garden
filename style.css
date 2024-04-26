@@ -21,6 +21,15 @@ a{  color: white;
     font-family: var(--font);
 }
                                 /* HEADER */
+
+#openBtn{
+    display: none;
+}
+
+.sidenav{
+    display: none;
+}
+                
 header {
     z-index: 2;
     display: flex;
@@ -492,7 +501,65 @@ footer img{
                                                 /* RESPONSIVE */
 @media only screen and (max-width: 768px) {
 
+    #openBtn{
+        display: table-header-group;
+        margin-left: 5vw;
+        margin-right: 20vw;
+        margin-top: 25px;
+        
+    }
 
+    .sidenav{
+        display: block;
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        z-index: 1;
+        top: 0PX;
+        left: -250px;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding-top: 60px;
+        transition: left 0.5s ease;
+    }
+
+    .logoNav{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .RS{
+        text-align:right;
+    }
+
+    .sidenav li{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20PX;
+        list-style-type: none
+    }
+
+    .sidenav.active{
+        left: 0;
+    }
+
+    .sidenav .close{
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+    }
+
+    .burger-icon span {
+        display: block;
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+    }
+
+    #myLinks{
+        display: none;
+    }
 
     .logoBar{
         max-width: 35%;
